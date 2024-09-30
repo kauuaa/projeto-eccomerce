@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
@@ -84,6 +84,10 @@
 
 
 /* MAIN */
+.barraSuperior  a {
+    color: white;
+}
+
 .banner {
     margin: 40px 0;
     display: flex;
@@ -93,7 +97,7 @@
 .cartoesInfo {
     display: flex;
     justify-content: space-evenly;
-    padding: 20px 0;
+    margin: 80px 0;
 }
 
 .cartao {
@@ -114,53 +118,102 @@
 
 .categorias {
     text-align: center;
-    padding: 20px 0;
+}
+
+.categorias h2 {
+    font-size: 35px;
 }
 
 .listaCategorias {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     margin-top: 10px;
 }
 
 .itemCategoria {
-    background-color: #f0f0f0;
+    background-color: #D9D9D9;
     padding: 20px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 230px;
+    height: 220px;
+    margin: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.itemCategoria:hover {
+    transform: scale(1.1);
 }
 
 .newsletter {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 60px 0;
     text-align: center;
-    margin: 20px 0;
 }
-
+  
 .caixaNewsletter {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    background-color: #E8E7E7;
+    padding: 20px;
+    border-radius: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.caixaNewsletter h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #8B0000;
+}
+  
+.caixaNewsletter input {
+    width: 35%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 0px 30px;
 }
 
+.caixaNewsletter input::placeholder {
+    margin: 20px;
+}
+
+.caixaNewsletter button {
+    background-color: #8B0000;
+    color: #fff;
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .3s;
+}
+  
+.caixaNewsletter button:hover {
+    background-color: #510202;
+}
+/* FIM MAIN */
+
+/* FOOTER */
 .conteudoRodape {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+    justify-content: center;
+    gap: 220px;
+    padding: 30px 0;
+    background-color: #D9D9D9;
+    color: black;
 }
 
 .logoRodape {
     width: 80px;
-}
-
-.linksRodape, .infoRodape, .contatoRodape {
-    margin: 0 10px;
 }
 
 .linksRodape p, .infoRodape p, .contatoRodape p {
@@ -171,3 +224,4 @@
 ul {
     list-style: none;
 }
+/* FIM FOOTER */

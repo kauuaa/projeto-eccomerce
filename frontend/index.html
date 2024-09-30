@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | AutoPeças</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="barraSuperior">
-        <a href="index.html"><img src="src/logotipos/white-logo-64.svg" alt="Logo" class="logo"></a>
+        <a href="index.html"><img src="assets/src/logotipos/white-logo-64.svg" alt="Logo" class="logo"></a>
         <div class="barraPesquisa">
             <input type="text" placeholder="Buscar produto">
             <span class="material-symbols-outlined" id="lupa">search</span>
         </div>
         <div class="iconesUsuario">
-            <span class="material-symbols-outlined icone" id="pessoa">person</span>
-            <span class="material-symbols-outlined icone" id="carrinho">shopping_cart</span>
+            <a href="pages/login.html"><span class="material-symbols-outlined icone" id="pessoa">person</span></a>
+            <a href="pages/carrinho.html"><span class="material-symbols-outlined icone" id="carrinho">shopping_cart</span></a>
         </div>
     </header>
+    <!-- FIM HEADER -->
 
+
+    <!-- MAIN -->
     <main>
         <section class="banner">
-            <img src="src/banners/frete-gratis-pc.png" alt="banner-frete-gratis">
+            <img src="assets/src/banners/frete-gratis-pc.png" alt="banner-frete-gratis">
         </section>
 
         <section class="cartoesInfo">
@@ -52,17 +56,19 @@
         </section>
 
         <section class="newsletter">
-            <h3>Receba novidades</h3>
             <div class="caixaNewsletter">
+            <h3>Receba novidades</h3>
                 <input type="email" placeholder="Digite seu e-mail">
-                <button>Cadastrar</button>
+                <button>Cadastre-se</button>
             </div>
         </section>
     </main>
+    <!-- FIM MAIN -->
 
+    <!-- FOOTER -->
     <footer>
         <div class="conteudoRodape">
-            <img src="logo.png" alt="Logo" class="logoRodape">
+            <a href="index.html"><img src="assets/src/logotipos/black-logo64.svg" alt="Logo" class="logo"></a>
             <div class="linksRodape">
                 <p><strong>Categorias</strong></p>
                 <ul>
@@ -89,5 +95,6 @@
             </div>
         </div>
     </footer>
+    <!-- FIM FOOTER -->
 </body>
 </html>
