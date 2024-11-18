@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+
+.barraSuperior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B0000;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logo {
+    margin-left: 80px;
+    width: 60px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.barraPesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 5px;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.barraPesquisa input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 1;
+    color: #686868;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#lupa {
+    color: #686868;
+    transition: all .3s;
+}
+
+#carrinho {
+    margin-right: 80px;
+}
+
+#carrinho:hover,
+#pessoa:hover,
+#lupa:hover {
+    transform: scale(1.2);
+}
+
+.iconesUsuario {
+    display: flex;
+    gap: 15px;
+}
+
+.iconesUsuario .icone {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* FIM HEADER */
+
+
+/* FOOTER */
+
+.conteudoRodape {
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+    padding: 30px 0;
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.logoRodape {
+    width: 80px;
+}
+
+.linksRodape p, .infoRodape p, .contatoRodape p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+/* FIM FOOTER */
