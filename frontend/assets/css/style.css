@@ -1,3 +1,9 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* INDEX */
 .barraSuperior a {
     color: white;
@@ -44,6 +50,10 @@
     justify-content: center;
     gap: 60px;
     margin-top: 10px;
+}
+
+.categoria {
+    margin-top: 70px;
 }
 
 .itemCategoria {
@@ -114,15 +124,21 @@
 .caixaNewsletter button:hover {
     background-color: #510202;
 }
+
+.caixaNewsletter a {
+    color: white;
+    text-decoration: none;
+}
+
 /* FIM INDEX */
 
 
 /* LOGIN */
 .mainLogin {
-    height: auto;
+    height: 100%;
 }
 
-.container {
+.containerLogin {
     width: 100%;
     max-width: 400px;
     padding: 32px;
@@ -131,29 +147,29 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #333;
-    margin: 22px auto;
+    margin: 100px auto;
 }
 
 .logoLogin {
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
 }
 
 .logo h1 {
-    font-size: 24px; 
+    font-size: 24px;
     color: #800000;
 }
 
 .image {
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
 }
 
 .form input {
     width: 100%;
-    padding: 12.8px; 
-    margin-bottom: 16px; 
+    padding: 12.8px;
+    margin-bottom: 16px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 .form input:focus {
@@ -164,10 +180,10 @@
 
 .form button {
     width: 100%;
-    padding: 12.8px; 
+    padding: 12.8px;
     background: #800000;
     color: #fff;
-    font-size: 16px; 
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -179,26 +195,28 @@
 }
 
 .links {
-    margin-top: 16px; 
+    margin-top: 16px;
 }
 
 .links a {
     color: #800000;
     text-decoration: none;
-    font-size: 14.4px; 
-    margin: 0 8px; 
+    font-size: 14.4px;
+    margin: 0 8px;
 }
 
 .links a:hover {
     text-decoration: underline;
 }
+
 /* FIM LOGIN */
 
 
 /* CRIAR CONTA */
-main {
+.mainCriarConta {
     text-align: center;
     padding: 20px;
+    height: 100%;
 }
 
 h1 {
@@ -235,8 +253,8 @@ h1 {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
-    transition: border-color 0.3s ease; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
 }
 
 .formulario input:focus {
@@ -245,7 +263,7 @@ h1 {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.btn-cadastrar {
+.btnCadastrar {
     background-color: #800000;
     color: white;
     padding: 10px 20px;
@@ -253,5 +271,31 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s ease;
 }
+
+.btnCadastrar:hover {
+    background: #b30000;
+}
+
 /* FIM CRIAR CONTA */
+
+
+/* CARRINHO */
+.mainCarrinho {
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.containerCarrinho {
+    max-width: 1000px; 
+}
+
+.mainCarrinho h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+/* FIM CARRINHO */
