@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/src/white-logo-64.svg" type="image/x-icon">
+    <title>Limpeza | AutoPeças</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../assets/css/header-footer.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="barraSuperior">
+        <a href="../index.html"><img src="../assets/src/white-logo-64.svg" alt="Logo" class="logo"></a>
+        <div class="barraPesquisa">
+            <input type="text" placeholder="Buscar produto">
+            <span class="material-symbols-outlined" id="lupa">search</span>
+        </div>
+        <div class="iconesUsuario">
+            <a href="login.html"><span class="material-symbols-outlined icone" id="pessoa">person</span></a>
+            <a href="carrinho.html"><span class="material-symbols-outlined icone" id="carrinho">shopping_cart</span></a>
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- MAIN -->
+    <main class="mainPaginaProdutos">
+
+        <div class="linhaReta">
+            <h1>Limpeza</h1>
+            <div class="ordenarPor">
+                <label>Ordenar por:</label>
+                <select id="selectOrdenar">
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                    <option value="maiorPreco">Maior preço</option>
+                    <option value="menorPreco">Menor preço</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="produtos">
+    
+            <div class="produtoConteudo">
+                <img src="../assets/src/produto-limpeza-01.png" alt="Kit Vonixx Limpeza Automotiva">
+                <h2>Kit Vonixx Limpeza Automotiva</h2>
+                <p class="preco">R$ 149,90</p>
+                <p class="parcelamento">12x de R$ 12,49</p>
+                <button id="comprar" class="comprar">Comprar</button>
+                <button id="addCarrinho" class="addCarrinho">Adicionar ao Carrinho</button>
+            </div>
+
+        </div>
+    </main>
+    <!-- FIM MAIN -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="conteudoRodape">
+            <a href="index.html"><img src="../assets/src/black-logo64.svg" alt="Logo" class="logo"></a>
+            <div class="linksRodape">
+                <p><strong>Categorias</strong></p>
+                <ul>
+                    <a href="acessorios.html">
+                        <li>Acessórios</li>
+                    </a>
+                    <a href="ferramentas.html">
+                        <li>Ferramentas</li>
+                    </a>
+                    <a href="eletronicos.html">
+                        <li>Eletrônicos</li>
+                    </a>
+                    <a href="limpeza.html">
+                        <li>Limpeza</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="infoRodape">
+                <p><strong>Informações</strong></p>
+                <ul>
+                    <a href="sobre.html">
+                        <li>Sobre nós</li>
+                    </a>
+                    <a href="politicaPrivacidade.html">
+                        <li>Política de privacidade</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="contatoRodape">
+                <p><strong>Atendimento</strong></p>
+                <ul>
+                    <a href="contato.html">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+     <script src="../assets/js/ordernarPor.js"></script>
+</body>
+
+</html>

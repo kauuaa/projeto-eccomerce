@@ -106,4 +106,16 @@ ul {
     list-style: none;
 }
 
+.linksRodape a,
+.infoRodape a,
+.contatoRodape a {
+    text-decoration: none;
+    color: black;
+}
+
+.linksRodape a:hover,
+.infoRodape a:hover,
+.contatoRodape a:hover {
+    text-decoration: underline;
+}
 /* FIM FOOTER */
