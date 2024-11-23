@@ -28,7 +28,7 @@ const apagarEntrega = async (req, res) => {
     console.log(valores)
 
     try {
-        const apagar = Entrega.destroy({ where: { id_Entrega: valores.id } })
+        const apagar = Entrega.destroy({ where: { codEntrega: valores.id } })
         res.status(201).json({ message: `Entrega apagada com sucesso!` })
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -41,7 +41,7 @@ const atualizarEntrega = async (req, res) => {
     console.log(valores)
 
     try {
-        const atualizar = await Entrega.update(valores, { where: { id_Entrega: valores.id_Entrega } })
+        const atualizar = await Entrega.update(valores, { where: { codEntrega: valores.codEntrega } })
         console.log(atualizar)
         res.status(201).json(atualizar)
     } catch (error) {

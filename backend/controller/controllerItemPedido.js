@@ -1,6 +1,6 @@
 const itemPedido = require('../model/itemPedido')
 
-const cadastraritemPedido = async (req, res) => {
+const cadastrarItemPedido = async (req, res) => {
     const valores = req.body
     console.log(valores)
 
@@ -13,7 +13,7 @@ const cadastraritemPedido = async (req, res) => {
     }
 }
 
-const listaritemPedido = async (req, res) => {
+const listarItemPedido = async (req, res) => {
     try {
         const listar = await itemPedido.findAll()
         res.status(201).json(listar)
@@ -23,7 +23,7 @@ const listaritemPedido = async (req, res) => {
     }
 }
 
-const apagaritemPedido = async (req, res) => {
+const apagarItemPedido = async (req, res) => {
     const valores = req.params
     console.log(valores)
 
@@ -36,7 +36,7 @@ const apagaritemPedido = async (req, res) => {
     }
 }
 
-const atualizaritemPedido = async (req, res) => {
+const atualizarItemPedido = async (req, res) => {
     const valores = req.body
     console.log(valores)
 
@@ -50,4 +50,4 @@ const atualizaritemPedido = async (req, res) => {
     }
 }
 
-module.exports = { cadastraritemPedido, listaritemPedido, apagaritemPedido, atualizaritemPedido }
+module.exports = { cadastrarItemPedido, listarItemPedido, apagarItemPedido, atualizarItemPedido }

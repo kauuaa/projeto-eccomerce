@@ -28,7 +28,7 @@ const apagarReabastecimento = async (req, res) => {
     console.log(valores)
 
     try {
-        const apagar = Reabastecimento.destroy({ where: { id_Reabastecimento: valores.id } })
+        const apagar = Reabastecimento.destroy({ where: { codReabastecimento: valores.id } })
         res.status(201).json({ message: `Reabastecimento apagada com sucesso!` })
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -41,7 +41,7 @@ const atualizarReabastecimento = async (req, res) => {
     console.log(valores)
 
     try {
-        const atualizar = await Reabastecimento.update(valores, { where: { id_Reabastecimento: valores.id_Reabastecimento } })
+        const atualizar = await Reabastecimento.update(valores, { where: { codReabastecimento: valores.codReabastecimento } })
         console.log(atualizar)
         res.status(201).json(atualizar)
     } catch (error) {

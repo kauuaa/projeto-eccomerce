@@ -38,7 +38,7 @@ const apagarCliente = async (req, res) => {
     console.log(valores)
 
     try {
-        const apagar = Cliente.destroy({ where: { id_Cliente: valores.id } })
+        const apagar = Cliente.destroy({ where: { codCliente: valores.id } })
         res.status(201).json({ message: `Cliente apagada com sucesso!` })
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -51,7 +51,7 @@ const atualizarCliente = async (req, res) => {
     console.log(valores)
 
     try {
-        const atualizar = await Cliente.update(valores, { where: { id_Cliente: valores.id_Cliente } })
+        const atualizar = await Cliente.update(valores, { where: { codCliente: valores.codCliente } })
         console.log(atualizar)
         res.status(201).json(atualizar)
     } catch (error) {

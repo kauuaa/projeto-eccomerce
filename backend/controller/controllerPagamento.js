@@ -28,7 +28,7 @@ const apagarPagamento = async (req, res) => {
     console.log(valores)
 
     try {
-        const apagar = Pagamento.destroy({ where: { id_Pagamento: valores.id } })
+        const apagar = Pagamento.destroy({ where: { codPagamento: valores.id } })
         res.status(201).json({ message: `Pagamento apagada com sucesso!` })
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -41,7 +41,7 @@ const atualizarPagamento = async (req, res) => {
     console.log(valores)
 
     try {
-        const atualizar = await Pagamento.update(valores, { where: { id_Pagamento: valores.id_Pagamento } })
+        const atualizar = await Pagamento.update(valores, { where: { codPagamento: valores.codPagamento } })
         console.log(atualizar)
         res.status(201).json(atualizar)
     } catch (error) {

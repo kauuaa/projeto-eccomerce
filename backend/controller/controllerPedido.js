@@ -1,11 +1,11 @@
-const Produto = require('../model/Produto')
+const Pedido = require('../model/Pedido')
 
-const cadastrarProduto = async (req, res) => {
+const cadastrarPedido = async (req, res) => {
     const valores = req.body
     console.log(valores)
 
     try {
-        const cadastrar = await Produto.create(valores)
+        const cadastrar = await Pedido.create(valores)
         res.status(201).json(cadastrar)
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -13,9 +13,9 @@ const cadastrarProduto = async (req, res) => {
     }
 }
 
-const listarProduto = async (req, res) => {
+const listarPedido = async (req, res) => {
     try {
-        const listar = await Produto.findAll()
+        const listar = await Pedido.findAll()
         res.status(201).json(listar)
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -23,25 +23,25 @@ const listarProduto = async (req, res) => {
     }
 }
 
-const apagarProduto = async (req, res) => {
+const apagarPedido = async (req, res) => {
     const valores = req.params
     console.log(valores)
 
     try {
-        const apagar = Produto.destroy({ where: { id_Produto: valores.id } })
-        res.status(201).json({ message: `Produto apagada com sucesso!` })
+        const apagar = Pedido.destroy({ where: { codPedido: valores.id } })
+        res.status(201).json({ message: `Pedido apagada com sucesso!` })
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
         console.log(`Erro, ${error}`)
     }
 }
 
-const atualizarProduto = async (req, res) => {
+const atualizarPedido = async (req, res) => {
     const valores = req.body
     console.log(valores)
 
     try {
-        const atualizar = await Produto.update(valores, { where: { id_Produto: valores.id_Produto } })
+        const atualizar = await Pedido.update(valores, { where: { codPedido: valores.codPedido } })
         console.log(atualizar)
         res.status(201).json(atualizar)
     } catch (error) {
@@ -50,4 +50,4 @@ const atualizarProduto = async (req, res) => {
     }
 }
 
-module.exports = { cadastrarProduto, listarProduto, apagarProduto, atualizarProduto }
+module.exports = { cadastrarPedido, listarPedido, apagarPedido, atualizarPedido }

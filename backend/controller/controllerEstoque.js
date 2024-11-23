@@ -28,7 +28,7 @@ const apagarEstoque = async (req, res) => {
     console.log(valores)
 
     try {
-        const apagar = Estoque.destroy({ where: { id_Estoque: valores.id } })
+        const apagar = Estoque.destroy({ where: { codEstoque: valores.id } })
         res.status(201).json({ message: `Estoque apagada com sucesso!` })
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -41,7 +41,7 @@ const atualizarEstoque = async (req, res) => {
     console.log(valores)
 
     try {
-        const atualizar = await Estoque.update(valores, { where: { id_Estoque: valores.id_Estoque } })
+        const atualizar = await Estoque.update(valores, { where: { codEstoque: valores.codEstoque } })
         console.log(atualizar)
         res.status(201).json(atualizar)
     } catch (error) {

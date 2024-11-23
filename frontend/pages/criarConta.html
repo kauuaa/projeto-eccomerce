@@ -37,29 +37,28 @@
 
             <div class="identificacao">
                 <h3>Identificação</h3>
-                <input type="text" placeholder="Código do cliente" required>
-                <input type="text" placeholder="Nome do cliente" required>
-                <input type="text" placeholder="Sobrenome do cliente" required>
-                <input type="text" placeholder="CPF do cliente" required>
-                <input type="text" placeholder="Telefone do cliente" required>
-                <input type="email" placeholder="Email do cliente" required>
-                <input type="password" placeholder="Senha do cliente" required>
+                <input type="text" id="nome" placeholder="Nome do cliente" required>
+                <input type="text" id="sobrenome"  placeholder="Sobrenome do cliente" required>
+                <input type="text" id="cpf"  placeholder="CPF do cliente" required>
+                <input type="text" id="telefone"  placeholder="Telefone do cliente" required>
+                <input type="email" id="email"  placeholder="Email do cliente" required>
+                <input type="password" id="senha"  placeholder="Senha do cliente" required>
             </div>
 
             <div class="entrega">
                 <h3>Entrega</h3>
-                <input type="text" placeholder="Logradouro" required>
-                <input type="text" placeholder="Número" required>
-                <input type="text" placeholder="Bairro" required>
-                <input type="text" placeholder="Complemento" required>
-                <input type="text" placeholder="Localidade" required>
-                <input type="text" placeholder="UF" required>
-                <input type="text" placeholder="CEP" required>
-                <input type="text" placeholder="Status do cliente" required>
+                <input type="text" id="logradouro" placeholder="Logradouro" required>
+                <input type="text" id="numero" placeholder="Número" required>
+                <input type="text" id="bairro" placeholder="Bairro" required>
+                <input type="text" id="complemento" placeholder="Complemento" required>
+                <input type="text" id="localidade" placeholder="Localidade" required>
+                <input type="text" id="uf"  placeholder="UF" required>
+                <input type="text" id="cep"  placeholder="CEP" required>
+                <input type="text" id="status"  placeholder="Status do cliente" required>
             </div>
         </form>
-
-        <button class="btnCadastrar" type="submit">Cadastrar Cliente</button>
+        <div id="resposta"></div>
+        <button class="btnCadastrar" id="cadastrar" type="submit">Cadastrar Cliente</button>
         
     </main>
     <!-- FIM MAIN -->
@@ -107,6 +106,7 @@
         </div>
     </footer>
     <!-- FIM FOOTER -->
+     <script src="../assets/js/criarConta.js"></script>
 </body>
 
 </html>

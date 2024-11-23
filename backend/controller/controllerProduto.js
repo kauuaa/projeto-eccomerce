@@ -1,11 +1,11 @@
-const Fabricante = require('../model/Fabricante')
+const Produto = require('../model/Produto')
 
-const cadastrarFabricante = async (req, res) => {
+const cadastrarProduto = async (req, res) => {
     const valores = req.body
     console.log(valores)
 
     try {
-        const cadastrar = await Fabricante.create(valores)
+        const cadastrar = await Produto.create(valores)
         res.status(201).json(cadastrar)
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -13,9 +13,9 @@ const cadastrarFabricante = async (req, res) => {
     }
 }
 
-const listarFabricante = async (req, res) => {
+const listarProduto = async (req, res) => {
     try {
-        const listar = await Fabricante.findAll()
+        const listar = await Produto.findAll()
         res.status(201).json(listar)
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
@@ -23,25 +23,25 @@ const listarFabricante = async (req, res) => {
     }
 }
 
-const apagarFabricante = async (req, res) => {
+const apagarProduto = async (req, res) => {
     const valores = req.params
     console.log(valores)
 
     try {
-        const apagar = Fabricante.destroy({ where: { codFabricante: valores.id } })
-        res.status(201).json({ message: `Fabricante apagada com sucesso!` })
+        const apagar = Produto.destroy({ where: { codProduto: valores.id } })
+        res.status(201).json({ message: `Produto apagada com sucesso!` })
     } catch (error) {
         res.status(500).json({ message: `Erro!` })
         console.log(`Erro, ${error}`)
     }
 }
 
-const atualizarFabricante = async (req, res) => {
+const atualizarProduto = async (req, res) => {
     const valores = req.body
     console.log(valores)
 
     try {
-        const atualizar = await Fabricante.update(valores, { where: { codFabricante: valores.codFabricante } })
+        const atualizar = await Produto.update(valores, { where: { codProduto: valores.codProduto } })
         console.log(atualizar)
         res.status(201).json(atualizar)
     } catch (error) {
@@ -50,4 +50,4 @@ const atualizarFabricante = async (req, res) => {
     }
 }
 
-module.exports = { cadastrarFabricante, listarFabricante, apagarFabricante, atualizarFabricante }
+module.exports = { cadastrarProduto, listarProduto, apagarProduto, atualizarProduto }
