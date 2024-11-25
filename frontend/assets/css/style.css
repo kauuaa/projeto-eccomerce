@@ -306,7 +306,58 @@ h1 {
     margin-bottom: 15px;
 }
 
+.tabelaCarrinho {
+    background: rgba(135, 135, 135, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(135, 135, 135, 0.3);
+    padding: 25px;
+}
 
+.tabelaCarrinho tr {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin: 5px 0px;
+}
+
+.tabelaCarrinho th {
+    margin: 0px 100px;
+}
+
+.produtoTabela {    
+    justify-content: center;
+}
+
+.subtotal {
+    margin: 20px;
+}
+
+.botaoContinuar,
+.botaoFinalizar {
+    background-color: #800000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 10px 0px;
+}
+
+.botaoContinuar:hover,
+.botaoFinalizar:hover {
+    background: #b30000;
+}
+
+.produtosContainer {
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
 
 /* FIM CARRINHO */
 
@@ -341,7 +392,7 @@ h1 {
 
 .produtos {
     display: grid;
-    grid-template-columns: repeat(4, 300px); 
+    grid-template-columns: repeat(4, 300px);
     gap: 50px;
     justify-content: center;
 }
@@ -403,6 +454,7 @@ h1 {
 .addCarrinho:hover {
     background: #b30000;
 }
+
 /* FIM PAGINA PRODUTOS */
 
 
@@ -431,6 +483,7 @@ h1 {
 .containerContato p {
     margin: 5px 0px;
 }
+
 /* FIM CONTATO */
 
 
@@ -455,6 +508,7 @@ h1 {
 .containerPolitica p {
     margin: 5px 0px;
 }
+
 /* FIM POLITICA DE PRIVACIDADE */
 
 
@@ -479,4 +533,5 @@ h1 {
 .containerSobre p {
     margin: 5px 0px;
 }
+
 /* FIM SOBRE */

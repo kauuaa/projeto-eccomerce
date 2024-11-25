@@ -27,12 +27,7 @@ function carregarCarrinho() {
         carrinhoContainer.innerHTML = `
             <table class="tabelaCarrinho">
                 <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Preço Unitário</th>
-                        <th>Quantidade</th>
-                        <th>Subtotal</th>
-                    </tr>
+                  
                 </thead>
                 <tbody>
                 </tbody>
@@ -49,7 +44,7 @@ function carregarCarrinho() {
 
         carrinho.forEach(produto => {
             const produtoRow = `
-                <tr>
+                <tr class="produtosContainer">
                     <td class="produtoImagem">
                         <img src="${produto.image}" alt="${produto.nome}" style="width: 60px; height: 60px; object-fit: cover; border-radius: 5px;">
                     </td>
